@@ -55,22 +55,29 @@ nav a:hover {
 /*HEADER*/
 .hero {
     position: relative;
-    height: 100vh;
-    background-image: url('tacuapi-4-1.jpg'); 
+    width: 100%;
+    height: 60vh; /* altura más amigable en móviles */
+    background-image: url('tacuapi-4-1.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center; /* centra verticalmente */
     text-align: center;
-    padding-top: 110px; 
+    padding: 0; /* eliminamos padding extra que rompe la altura */
+    margin: 0;
 }
+
 @media (min-width: 769px) {
-    .hero-logo {
-        width: 350px;
-        margin-bottom: 325px;
-        margin-top: -95px;
-    } }
+    .hero {
+        height: 100vh; /* altura grande en desktop */
+        padding-top: 80px;
+        margin-top: 38px;
+        align-items: flex-start; /* mantener alineación original en desktop */
+    }
+}
+
 /*OVERLAY*/
 .hero::before {
     content: "";
@@ -81,7 +88,7 @@ nav a:hover {
     z-index: 1;
 }
 
-/* Contenido (logo + botón) */
+/* Contenido*/
 .hero-content {
     position: relative;
     z-index: 2;
@@ -146,12 +153,12 @@ nav a:hover {
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
-    font-size: 1rem; /* base para móviles */}
+    font-size: 1rem;}
     @media (min-width: 769px) {
         .texto1, .texto2 {
             padding-left: 190px;
             padding-right: 190px;
-            font-size: 1.1rem; /* tamaño para PC */
+            font-size: 1.1rem; 
         } }
 
 
@@ -318,7 +325,7 @@ padding-bottom: 50px;
 }
 
 .cubo1 { 
-    background-color: #234421; /* color de fondo suave */
+    background-color: #234421; 
     max-width: 600px;
     margin: 0 auto;
     padding: 2rem;
@@ -370,7 +377,7 @@ button:hover {
     color: #fff;
 }
 
-  /* Sección de contacto */
+  /* Sección de contacto */     
 .footer-contacto h4 {
     margin-bottom: 1rem;
     color: #f7e8d4;
