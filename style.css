@@ -104,6 +104,13 @@ nav a:hover {
     margin-bottom: 325px; 
     margin-top: -95px;
 }
+@media (min-width: 769px) {
+    .hero-logo {
+        width: 350px;
+        margin-bottom: 325px;
+        margin-top: -95px;
+    }
+}   
 
 /*Botón*/
 .hero-btn {
