@@ -55,19 +55,22 @@ nav a:hover {
 /*HEADER*/
 .hero {
     position: relative;
-    height: 100vh; 
+    height: 100vh;
     background-image: url('tacuapi-4-1.jpg'); 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: center; 
     text-align: center;
-    padding-top: 80px; 
-    margin-top: 38px;
+    padding-top: 110px; 
 }
-
+@media (min-width: 769px) {
+    .hero-logo {
+        width: 350px;
+        margin-bottom: 325px;
+        margin-top: -95px;
+    } }
 /*OVERLAY*/
 .hero::before {
     content: "";
